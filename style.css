@@ -9,7 +9,13 @@ html * {
 
 header {
 	position: relative;
-	top: 25px;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	min-height: 142px;
+
+	background-color: #FAFAFA;
+	border-bottom: 1px solid #E4E4E4;
 }
 
 a {
@@ -36,7 +42,6 @@ li {
 	vertical-align: middle;
 	position: relative;
 	line-height: 10px;
-	
 }
 
 
@@ -72,7 +77,14 @@ header ul {
 #apps_button, #notifications_button, #image_button {
 	display: inline-block;
 	position: relative;
+	z-index: -1;
 }
+
+#image_button {
+	right: 10px;
+	top: -7.5px;
+}
+
 
 #user_img {
 	border-radius:50%;
