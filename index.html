@@ -1,38 +1,56 @@
 <!DOCTYPE html> 
 <html>
 <link rel="stylesheet" type="text/css" href="./style.css">
-
   <head>
-
   </head>
-
   <body>
   	<div>
   		<header>
-        <ul id="h_left">
-          <div class="g_logo">
-            <img src="./googlelogo_color_272x92dp.png">
+        <ul id="main_header">
+          <div id="h_left">
+            <li><img id="g_image" src="./googlelogo_color_120x44dp.png"></li>
+    				<li>
+              <input id="search_bar" type="text">
+              <button id="search_button"><img id ="m_glass"src="./search_icon_64.png" height="24" width="24"></button>
+            </li>
           </div>
-  				<div class="s_bar">
-  					<input id="search_bar" type="text">
-  				</div>
+
+          <div id="h_right">
+    				<li class="h_buttons" id="apps_button"><a href=""><img id="nine_squares" src="./apps_grey.png" width="17.5" height="17.5"><li>
+
+    				<li class="h_buttons" id="notifications_button"><a href=""><img id ="n_bell" src="./notification_bell_grey.png" width="20" height="20"></li>
+
+    				<li class="h_buttons" id="image_button"><a href=""><img id="user_img" src="./archlinux_seahawks_square.png" width="32" height="32"></li>
+          </div>
   			</ul>
 
-  			<ul id="h_right">
-  				<li class="h_buttons" id="apps_button"><a href=""><img id="nine_squares" src="./apps_grey.png" width="17.5" height="17.5"><li>
-
-  				<li class="h_buttons" id="notifications_button"><a href=""><img id ="n_bell" src="./notification_bell_grey.png" width="20" height="20"></li>
-
-  				<li class="h_buttons" id="image_button"><a href=""><img id="user_img" src="./archlinux_seahawks_square.png" width="32" height="32"></li>
-  			</ul>
-
-  		</header>
-
-  	</div>
+        <nav>
+            <ul id="nav_list">
+              <div id="nav_left">
+                <li id="li_all"><a>All</a></li>
+                <li id="li_videos"><a>Videos</a></li>
+                <li id="li_news"><a>News</a></li>
+                <li id="li_shopping"><a>Shopping</a></li>
+                <li id="li_maps"><a>Maps</a></li>
+                <li id="li_more"><a>More</a></li>
+              </div>
+              <div id="nav_right">
+                <li id="li_settings"><a>Settings</a></li>
+                <li id="li_tools"><a>Tools</a></li>
+              </div>
+            </ul>
+        </nav>
     
-    <div id="main_search_results">
-      
-    </div>
+      </header>
+
+      <div id="main_search_results">
+        <ul>
+          
+        </ul>
+
+      </div>
+    
+  	</div>
 
   </body>
 </html>

@@ -8,26 +8,120 @@ html * {
 }
 
 header {
-	position: relative;
+	position: absolute;
 	top: 0px;
 	left: 0px;
 	width: 100%;
-	min-height: 142px;
+	height: 130px;
 
 	background-color: #FAFAFA;
 	border-bottom: 1px solid #E4E4E4;
 }
 
-a {
-	color: #000;
-	text-decoration: none;
-    text-align: center;
-	margin-left: 5px;
-	margin-right: 5px;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 li {
 	display: inline;
+}
+
+a {
+	margin-left: 5px;
+	margin-right: 5px;
+
+	text-decoration: none;
+    text-align: center;
+}
+
+#main_header {
+	position: relative;
+	height: 100px;
+}
+
+#h_left {
+	position: relative;
+	top: 30px; 
+	left: 10px;
+}
+
+#h_right {
+	position: relative;
+	top: -35px; 
+	left: 1750px;
+}
+
+#g_image {
+	height: 44px;
+	width: 120px;
+
+	position: relative;
+}
+
+#search_bar {
+	height: 40px;
+	width: 560px;
+	
+	position: relative;
+	top: -22.5px;
+	left: 10px;
+
+	border: 1px solid #F2F2F2;
+    box-shadow: 0.5px 0.5px 1px 1px #ccc;  
+}
+
+#search_bar:link, #search_bar:visited, #search_bar:hover {
+	box-shadow: 1px 1px 1px 1px #ccc;  
+}
+
+#notifications_button {
+	left: 5px;
+}
+
+#image_button {
+	top: 5px;
+}
+
+#user_img {
+	border-radius: 50%;
+}
+
+#nav_list {
+	position: relative;
+	top: -75px;
+	left: 125px;
+}
+
+#nav_list div li a {
+	font-family: Roboto !important;
+	font-size: 10pt;
+	color: #696969;
+}
+
+#nav_list div li a:visited, #nav_list div li a:focus, #nav_list div li a:active { 
+	text-decoration: none;
+}
+
+#nav_list div li a:hover {
+	color: #000;
+}
+
+#nav_left {
+	position: relative;
+	top: 10px;
+}
+
+#nav_right {
+	position: relative;
+	top: -10px;
+	left: 450px;
+}
+
+#nav_left li, #nav_right li {
+	margin-right: 5px;
 }
 
 .li_text {
@@ -42,67 +136,6 @@ li {
 	line-height: 10px;
 }
 
-
-a:visited, a:focus, a:active { 
-	text-decoration: none; 
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-header ul {
-	display: inline-flex;
-}
-
-#h_left {
-	float: left;
-	margin-left: 25px;
-}
-
-#h_right {
-	float: right;
-	margin-right: 50px;
-}
-
-#apps_button, #notifications_button, #image_button {
-	display: inline-block;
-	position: relative;
-	z-index: -1;
-}
-
-#image_button {
-	right: 10px;
-	top: -7.5px;
-}
-
-
-#user_img {
-	border-radius:50%;
-    -moz-border-radius:50%;
-    -webkit-border-radius:50%;
-}
-
-#nine_squares, #n_bell, #user_img {
-	vertical-align: top;
-}
-
-#main_div {
-    position: absolute;
-    margin-top: 200px;
-
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
 
 
 
