@@ -13,7 +13,6 @@ header {
 	left: 0px;
 	width: 100%;
 	height: 130px;
-
 	background-color: #FAFAFA;
 	border-bottom: 1px solid #E4E4E4;
 }
@@ -30,10 +29,12 @@ li {
 }
 
 a {
+	text-decoration: none;
+}
+
+.btn {
 	margin-left: 5px;
 	margin-right: 5px;
-
-	text-decoration: none;
     text-align: center;
 }
 
@@ -63,13 +64,13 @@ a {
 #search_bar {
 	height: 40px;
 	width: 630px;
-	
 	position: relative;
 	top: -22.5px;
 	left: 10px;
-
 	border: 1px solid #F2F2F2;
     box-shadow: 0.5px 0.5px 1px 1px #ccc;  
+    font: 16px Arial, sans-serif;
+    padding-left: 14px;
 }
 
 #search_bar:link, #search_bar:visited, #search_bar:hover {
@@ -110,31 +111,31 @@ a {
 #nav_list div li button {
 	background-color: transparent;
 	border-color: transparent;
-
 	padding-top: 20px;
 	padding-bottom: 20px;
 	padding-left: 10px;
 	padding-right: 10px;
-
 	font-family: Roboto !important;
 	font-size: 10pt;
 	color: #696969;
 }
 
-#nav_list div li button:visited, #nav_list div li button:focus, #nav_list div li button:hover { 
-	text-decoration: none;
-	color: #000;
-}
-
 #nav_left {
 	position: relative;
 	top: 10px;
+	left: 756px;
+	width: 400px;
+}
+
+#nav_left li button:focus, #nav_left li button:hover, #nav_right li button:focus, #nav_right li button:hover {
+	color: #000;
 }
 
 #nav_right {
 	position: relative;
 	top: -50px;
-	left: 370px;
+	left: 1280px;
+	width: 144px;
 }
 
 #li_all button {
@@ -144,15 +145,13 @@ a {
 
 #all_line {
 	position: absolute;
-
 	color: #4285F4 !important;
 	background-color: #4285F4;
 	border-color: transparent;
-
-	top: 68px;
-	left: 768px;
-	height: 2px;
-	width: 46px;
+	top: 69px;
+	left: 764px;
+	height: 1px;
+	width: 44px;
 }
 
 .h_buttons {
@@ -164,7 +163,6 @@ a {
 #search_results {
 	position: relative;
 	top: 131px;
-	width: 100%;
 	height: 100%;
 }
 
@@ -180,26 +178,38 @@ a {
 #content {
 	position: relative;
 	font-family: arial, sans-serif;
+	top: -40px;
+
 }
 
 .content_div {
 	position: relative;
+	left: 140px;
+	margin-bottom: 30px;
+	width: 1440px;
 }
 
 .web_link {
 	position: relative;
 	font-size: 18px;
+	margin-left: 18px;
+}
+
+.web_link:visited, .web_link:focus,.web_link:hover {
+	text-decoration: underline;
+}
+
+#first_web_link {
+	margin-left: 6px;
 }
 
 .web_url {
 	position: relative;
 	top: 2px;
 	left: 18px;
-	
 	color: #006621;
 	font-size: 14px;
 	font-style: normal;
-	
 	width: 600px;
   	white-space: nowrap;
   	overflow: hidden;
@@ -209,13 +219,173 @@ a {
 .web_summary {
 	position: relative;
 	top: 5px;
-	left: 18px;
-	
+	left: 18px;	
 	color: #545454;
 	font-size: small;
 	line-height: 1.4;
-
 	width: 600px;
 	word-wrap: break-word;
 }
 
+#related_box {
+	position: relative;
+	top: -32px;
+	left: 158px;
+	font-size: 18px;
+	line-height: 18px;
+	padding-bottom: 8px;
+	width: 1440px;
+}
+
+#page_box {
+	position: relative;
+	top: 20px;
+	left: -2px;
+}
+
+#related_pages_table {
+	width: 50%;
+}
+
+.rel_pg_tr {
+	display: block;
+    width: 35%;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 22px;
+    color: #1A0DAB;
+
+}
+
+.rel_pg_tr:visited, .rel_pg_tr:focus, .rel_pg_tr:hover {
+	text-decoration: underline;
+} 
+
+#result_page {
+	position: relative;
+	top: 20px;
+	left: 270px;
+}
+
+#result_body {
+	position: relative;
+}
+
+
+#go_img {
+	background-image: url("./google_logo_images.png");
+	width: 50px;
+	height: 38px;
+	background-position: -23px 0;
+}
+
+.o_img {
+	background-image: url("./google_logo_images.png");
+	width: 20px;
+	height: 38px;
+	background-position: -74px 0;
+}
+
+#gle_img {
+	background-image: url("./google_logo_images.png");
+	width: 71px;
+	height: 38px;
+	background-position: -96px 0;
+}
+
+#go_num {
+	position: relative;
+	left: 36px;
+	font-family: Roboto, Arial, sans-serif; 
+	font-size: 13px;
+	color: black;
+}
+
+.o_num {
+	position: relative;
+	left: 6px;
+	font-family: Roboto, Arial, sans-serif; 
+	font-size: 13px;
+	color: #4285F4;
+}
+
+#gle_next {
+	position: relative;
+	left: 48px;
+	font-family: Roboto, Arial, sans-serif; 
+	font-size: 13px;
+	color: #4285F4;
+}
+
+.o_num:visited, .o_num:focus, .o_num:hover, #gle_next:visited, #gle_next:focus, #gle_next:hover {
+	text-decoration: underline;
+}
+
+footer {
+	position: relative;
+	left: 0;
+	bottom: -200px;
+	background-color: #F2F2F2;
+	border-top: 1px solid #E4E4E4;
+	display: inline-block;	
+	width: 100%;
+	height: 82px;
+}
+
+#f_top, #f_bottom {
+	position: relative;
+	font-family: Arial, sans-serif; 
+	font-size: small;
+	line-height: 15px;
+	width: 1440px;
+}
+
+#f_top {
+	position: relative;
+	top: 5px;
+	left: 168px;
+}
+
+#grey_circle, .location_info_light, .location_info_dark {
+	float: left;
+	margin-right: 4px;
+}
+
+.location_info_light p, .location_info_dark p {
+	display: block;
+}
+
+.location_info_light {
+	color: #AAAAAA;
+}
+
+.location_info_dark {
+	color: #333333;
+	left: 8px;
+}
+
+.location_info_dark:focus, .location_info_dark:hover {
+	color: black;
+}
+
+#f_bottom {
+	position: relative;
+	top: 28px;
+	left: 168px;
+}
+
+.f_info {
+	float: left;
+	margin-right: 24px;
+	color: #333333;
+}
+
+.f_info a {
+	display: block;
+	color: #333333;
+}
+
+.f_info a:focus, .f_info a:hover {
+	color: black;
+}
